@@ -9,4 +9,8 @@ Working notes for the engine. Written before the code, updated before the code c
 4. Any type holding a file descriptor or pinned page owns it by RAII.
 5. Every component gets a test before it gets a caller.
 
-High Level Diagram
+## Direction
+Memory and Disk Management:
+The potential idea is to be able to build this into an embedded database for better computer vision workloads, therefore, the disk oriented database management system is worth looking into! Why? With memory getting quite costly, alternate solutions need to be found, especially when it comes to CV-based tasks. 
+
+Is this idea feasible though? Research required --> https://15445.courses.cs.cmu.edu/fall2025/notes/04-bufferpool.pdf
